@@ -16,17 +16,12 @@ int main(int argc, char* argv[])
 	 */
 	bamFile *bam_f = bam_open(argv[1], "r");
 	bam_index_t *b_idx = bam_index_load(argv[1]);
-
-	//fetching a region
-	int chr = atoi(argv[2]);
-	int start = atoi(argv[3]);
-	int end = atoi(argv[4]);
 	int ret;
 	
 	bam_iter_t iter; //bam file iterator
 	bam1_t *b; // alignment structure
 	b = bam_init1();
-	iter = bam_iter_query(b_idx, chr, start, end); //set the iterator for region
+	iter = bam_iter_query(b_idx, 21, 16050199, 16050300); //set the iterator for region
 	while((ret = bam_iter_read(bam_f, iter, b)) >= 0 )
 	{
 		/* 

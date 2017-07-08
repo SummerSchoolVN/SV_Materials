@@ -68,8 +68,6 @@ int main(int argc, char* argv[])
 		 * http://pezmaster31.github.io/bamtools/struct_bam_tools_1_1_bam_alignment.html
 		 * for more detail
 		 */
-
-        break;
     }
     return 0;
 }

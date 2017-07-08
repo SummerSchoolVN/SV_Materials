@@ -26,6 +26,7 @@ if __name__ == "__main__":
     reads = [read for read in oBAM.fetch("22", 16050199, 16050300)]
 
     ### Attributes of one read
+    # test the first read in reads object
     # r belong to class pysam.AlignedSegment
     r = reads[0]
 
