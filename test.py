@@ -14,10 +14,10 @@ if __name__ == "__main__":
     # reading BAM 
     # path/to/BAM file as the first argument
     # NOTE: please put the index .bai file at the same place of BAM file
-    oBAM = pysam.AlignmentFile("CHM1_chr22.bam", "rb")
+    oBAM = pysam.AlignmentFile(argv[1], "rb")
 
     # reading SAM
-    #oSAM = pysam.AlignmentFile("CHM1_chr22.sam", "r")
+    #oSAM = pysam.AlignmentFile(argv[1], "r")
 
     ### Fetching reads mapped to a region
     # oSAM and oBAM are now equivalent
