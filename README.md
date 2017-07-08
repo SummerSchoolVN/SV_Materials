@@ -20,7 +20,7 @@ There are some libraries used for reading BAM file in:
 You should take a look the example codes in this repository, which cointaining the API for reading BAM files, to implement your SV calling tool.
 
 ###	Installation
-require: zlib
+required: zlib
 ```
 git clone --recurse-submodules https://github.com/SummerSchoolVN/SV_Materials
 cd SV_Materials
@@ -49,6 +49,7 @@ Some examples codes were provided for reading BAM file: ```test.cc```, ```test.c
 
 ### Testing
 Before testing, just add bammtool and htslib library into your **LD_LIBRARY_PATH**:
+
 ```export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/path/to/bamtools/lib:/path/to/htslib```
 
 Then you could test the example codes as below:
